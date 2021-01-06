@@ -1,0 +1,166 @@
+% !TEX root = ./pkArticle.tex
+\mode*
+
+\subsection{Elimination, Context sensitive Halbwertszeit}
+
+Mit der {\it Halbwertszeit} (\HWZ) wird die Geschwindigkeit von (biologischen) Prozessen beschrieben. Beim radiokativen Zerfall ist die Aktivität nach einer \HWZ  
+halbiert. Nach zwei \HWZ beträgt die Aktivität noch die Hälfte der Hälfte d.h. ein Viertel.
+
+Diese Überlegungen lassen sich nicht direkt auf den Konzentrationsabfall von Medikamenten übertragen. Die einzelnen Umvertelungsprozesse können ebenfalls mit \HWZ beschrieben werden doch ist die Bedeutung nicht dieselbe wie beim radiokativen Zerfall. Deshalb soll die {\it Elimination} etwas allgemeiner betrachtet werden.
+
+\begin{frame}
+\frametitle{Elimination}
+\begin{itemize}[<+->]
+\item
+Elimination aus K\"orper oder Elimination aus Blut?
+\item
+Konzentrationsabfall: Umverteilung und Metabolisierung
+\item
+Es kann aktive Metaboliten geben
+\item
+Fettl\"osliche Medikamente werden in Leber zu inaktiven, wasserl\"oslichen Metaboliten umgewandelt
+\item
+Ausscheidung der wasserl\"oslichen Substanzen durch Niere
+\item
+Pharmakokinetik {\bf{quantifiziert}} die Geschwindikeit der Elimination
+\end{itemize}
+
+\note<1>{
+
+\begin{itemize}
+\item
+Elimination wird meist als \enquote{Kleinerwerden der Konzentration} des Medikamentes im Blut quantifiziert!
+\item
+Meist denkt man dabei an die Elimination des Medikamentes aus dem \enquote{Wirkort}, d.h. \enquote{Kleinerwerden} der Wirkung.
+\item
+Elimination ist aber im Grunde genommen das \enquote{Verschwinden} des Medikamentes aus dem Körper
+\end{itemize}
+
+}
+\end{frame}
+
+
+
+\frame{
+\mode<presentation>{
+\begin{tikzpicture}[remember picture, overlay]
+\node[inner sep=0pt,xshift=0cm] at (current page.center){
+\tikz \draw[step=2mm,black!50] (0,0) grid (126mm,94mm);
+};
+{
+\node[coordinate] at (1cm,-3.55cm) (start) {};
+\node[coordinate] at (1cm,3cm) (end) {};
+\node[coordinate] at (10cm,-3.55cm) (endy) {};
+\draw[->,thick] (start)--(end);
+\draw[->,thick] (start)--(endy);
+};
+\end{tikzpicture}
+}
+\frametitle{Halbwertszeit}
+\note<1>{
+\begin{itemize}
+\item
+Halbwertszeit wird oft als \enquote{Mass} für Eliminationsgeschwindigkeit verwendet
+\item
+Zeigen was Halbwertszeit bedeutet.
+\item
+Zeichnen eines Kompartimentes: Elimination verändert sich. (Es wird immer die Hälfte eliminiert)
+\item
+Wesentlich: $t_{\frac{1}{2}}$ bleibt konstant
+\item
+Mathematische Beziehung zwischen Clearance und $t_{\frac{1}{2}}$
+\end{itemize}
+}
+\infina
+}
+
+
+\mode<article>{
+\vspace{1cm}
+\begin{tikzpicture}[auto]
+\node[inner sep=0pt,xshift=0cm] at (current page.center){
+\tikz \draw[step=2mm,black!50] (0,0) grid (140mm,70mm);
+};
+\end{tikzpicture}
+}
+
+
+\mode<article>{\pagebreak}
+
+
+\begin{frame}
+\frametitle{Halbwertszeit: Mehrkompartiment Modelle}
+\note<1>{
+\begin{itemize}
+\item
+Zeichnen: Drei Kompartiment Modell - mit drei Clearance Werten
+\item
+Gleichzeitig wirken drei Clearance. Zu Beginn $\Delta Conc$ gr\"osser
+\item
+Es gibt definierte $t_{\frac{1}{2}}$: Achtung $2 * t_{\frac{1}{2}} \neq \frac{C_{0}}{4}$ !
+\item
+Wenn Zentrales Kompartiment bei 1 Komp aufgef\"ullt wird, immer wieder dieselbe Ausgangssituation\\
+bei Mehrkompartiment ist das ganz anders. Die Halbwertszeit wird anders sein.
+\item
+Mit Cylinder zeigen. 1 Komp auff\"ullen, 3 Komp auff\"ullen.\\
+10 l, 20l, 200l, 2,1,0.5 :  Bolus: von 50 = Konz 5; Nach t1/2 wieder Bolus 25 ...
+\end{itemize}
+}
+\infina
+\end{frame}
+
+
+\mode<article>{
+\vspace{1cm}
+\begin{tikzpicture}[auto]
+\node[inner sep=0pt,xshift=0cm] at (current page.center){
+\tikz \draw[step=2mm,black!50] (0,0) grid (140mm,70mm);
+};
+\end{tikzpicture}
+}
+
+
+\begin{frame}
+\frametitle{Halbwertszeit bei Mehrkompartiment Kinetik}
+\begin{itemize}
+    \item Gleichzeitg verschieden schnelle Umverteilung
+	\begin{itemize}
+    	\item Schnelle Umverteilung in Muskel (gut durchblutete Gewebe)
+    	\item Langsamere Umverteilung in Fettgewebe
+    	\item Elimination (Leber, Niere)
+	\end{itemize}
+    \item Die Prozesse haben {\it eigene} Halbwertszeit
+\end{itemize}
+\note<1>{.}
+\end{frame}
+
+
+Die Bedeutung dieser Halbwertszeiten in Bezug auf den Konzentrationsabfall ändert sich mit der Dauer der Medikamentenzufuhr. Wenn nach mehreren Bolusdosen die peripheren Kompartimente \enquote{aufgefüllt} sind, ist der initiale Konzentrationsabfall kleiner als nach der ersten Dosis.
+
+
+
+\begin{frame}
+\frametitle{Halbwertszeit ist von Dauer der Infusion abh\"angig! (Kontext sensitive Halbwertszeit)}
+\begin{itemize}
+\item
+Dauer der Infusion ist der \enquote{Kontext}
+\item
+Je länger die Infusion dauert, desto mehr Medikament ist im Körper umverteilt, umso länger dauert die Elimination.
+\item
+Die aktuell gültige Halbwertszeit kann berechnet werden (Mit PK Modell)
+\end{itemize}
+\note<1>{
+\begin{itemize}
+\item
+Excel: Dauer der Infusion: Halbwertszeit wird l\"anger. SimInfCSHT.xls
+\item
+Excel sheet mit Kurven: CSDTSimPropRemi.xls
+\end{itemize}
+}
+\infina
+\end{frame}
+
+
+Praktisch bedeutet dies, dass je länger eine Anästhesie dauert, desto früher (vor Ende der OP) muss die Medikamentenzufuhr (Propofol) gestoppt werden, damit die Patientin rechtzeitig erwacht.
+
+

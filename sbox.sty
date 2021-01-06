@@ -1,0 +1,49 @@
+
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{calc}
+%
+% Boxed environment with semi-transparent shadow.
+%
+\newlength{\boxw}
+\newlength{\boxh}
+\newlength{\shadowsize}
+\newlength{\boxroundness}
+\newlength{\tmpa}
+\newsavebox{\shadowblockbox}
+
+\setlength{\shadowsize}{6pt}
+\setlength{\boxroundness}{3pt}
+
+\newenvironment{shadowblock}[2][yellow!50]%
+%The opitonal argument is always the first one!
+%Arguments can only go with the begindef part!
+{\def\fcol{#1}
+\begin{lrbox}{\shadowblockbox}\begin{minipage}{#2}
+}%
+{\end{minipage}\end{lrbox}%
+\settowidth{\boxw}{\usebox{\shadowblockbox}}%
+\settodepth{\tmpa}{\usebox{\shadowblockbox}}%
+\settoheight{\boxh}{\usebox{\shadowblockbox}}%
+\addtolength{\boxh}{\tmpa}%
+\begin{tikzpicture}
+    \addtolength{\boxw}{\boxroundness * 2}
+    \addtolength{\boxh}{\boxroundness * 2}
+
+    \foreach \x in {0,.05,...,1}
+    {
+        \setlength{\tmpa}{\shadowsize * \real{\x}}
+        \fill[xshift=\shadowsize - 1pt,yshift=-\shadowsize + 1pt,
+                black,opacity=.04,rounded corners=\boxroundness]
+            (\tmpa, \tmpa) rectangle +(\boxw - \tmpa - \tmpa,
+                \boxh - \tmpa - \tmpa);
+    }
+
+    \filldraw[fill=\fcol, draw=black!50, rounded corners=\boxroundness]
+        (0, 0) rectangle (\boxw, \boxh);
+    \draw node[xshift=\boxroundness,yshift=\boxroundness,
+        inner sep=0pt,outer sep=0pt,anchor=south west]
+             (0,0) {\usebox{\shadowblockbox}};
+\end{tikzpicture}}

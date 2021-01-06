@@ -1,0 +1,47 @@
+\mode*
+
+\subsection{Elimination, Relevanter Konzentrationsabfall}
+
+
+\frame{
+\mode<presentation>{
+\begin{tikzpicture}[remember picture, overlay]
+\node[inner sep=0pt,xshift=0cm] at (current page.center){
+\tikz \draw[step=2mm,black!50] (0,0) grid (126mm,94mm);
+};
+{
+\node[coordinate] at (1cm,-3.55cm) (start) {};
+\node[coordinate] at (1cm,3cm) (end) {};
+\node[coordinate] at (10cm,-3.55cm) (endy) {};
+\draw[->,thick] (start)--(end);
+\draw[->,thick] (start)--(endy);
+};
+\end{tikzpicture}
+}
+\frametitle{Klinisch relevanter Konzentrationsabfall}
+\note<1>{
+\begin{itemize}
+\item
+Sigmoide Kurve: Keine fixe Konzentration, keine fixe Zeit: Wenn Konzentration um 70\% abfallen muss damit Patient z.B. erwacht, dann ist diese Zeit relevant.
+\item
+Excel Simulation - Vergleich von verschiedenen Kurven.
+\end{itemize}
+}
+\infina
+}
+
+
+\mode<article>{
+\vspace{1cm}
+\begin{tikzpicture}[auto]
+\node[inner sep=0pt,xshift=0cm] at (current page.center){
+\tikz \draw[step=2mm,black!50] (0,0) grid (140mm,70mm);
+};
+\end{tikzpicture}
+
+\vspace{0.5cm}
+Um abzuschätzen, wie lange es nach abstellen der Medikamentenzufuhr geht, bis die Wirkung \enquote{weg ist} muss man wissen, wieviel die Konzentration absinken muss. Es gibt keinen Grund anzunehmen, dass für die verschiedenen Wirkungen der Anästhetika, ein Abfall der Konzentration auf die Hälfte (\HWZ !) klinisch klinisch relevant ist. Für volatile Anästhetika braucht es Reduktion der Konzentration um ca. 70 - 80 \% damit ein Patient erwacht. (adäquate Anästhesie bis Erwachen). Eine ähnliche Grössenordnung ist auch für Propofol beschrieben. 
+
+
+
+}

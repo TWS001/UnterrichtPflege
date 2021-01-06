@@ -1,0 +1,55 @@
+%
+\documentclass[a4paper,10pt]{article}
+%%\usepackage[envcountsect]{beamerarticle}
+
+\usepackage{beamerarticle}
+\usepackage{pgf}
+\newcommand{\HWZ}{$t_{\frac{1}{2}}$}
+\newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
+
+\usepackage[ngerman]{babel}
+\usepackage[ansinew]{inputenc}
+\usepackage[babel,german=quotes]{csquotes}
+
+\usepackage{sbox}
+%
+\usepackage{currfile}
+  \newcommand{\infina}{% inSertfiLEnaME
+    \begin{textblock}{0}(0.4,15)
+    {\color{black!20}\Tiny{\currfilename}}
+  \end{textblock}}
+%%
+
+\mode<article>{
+  \usepackage{float}
+  \usepackage{fullpage}
+  \usepackage{hyperref}
+  \usepackage{vmargin}
+  \usepackage{pdfpages}
+  \restylefloat{figure}
+  \setjobnamebeamerversion{pkBeamer}
+  \setmarginsrb{1.0in}{0.5in}{1.0in}{1.0in}{8pt}{15mm}{6pt}{10mm}
+    % style or the header and footer
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \lhead{Intravenöse Anästhesie: Th. Schnider} \rhead{\thepage} \cfoot{Januar 2020}
+}
+
+\title{Pharmakokinetik, Pharmakodynamik}
+\subtitle{}
+\author{}
+\date[\today]{\today}
+\institute[Kantonsspital St.Gallen] {
+  \inst{}
+ }
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+\mode<article>{\maketitle}
+
+\mode<all>
+\input{slides.tex}
+\mode<all>
+\input{slides2.tex}
+\end{document} 

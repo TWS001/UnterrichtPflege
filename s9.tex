@@ -1,0 +1,280 @@
+% !TEX root = ./pkMain.tex
+\mode*
+
+Lange Zeit nahm man an, dass man aufgrund der Konzentration eines Medikamentes im Blut, die Wirkung absch�tzen kann. Von der intraven�sen Injektion erwartete man resp. man nahm an, dass die Wirkung sofort eintreten w�rde.
+
+\begin{frame}<presentation>[label=ZeitBez]
+\begin{tikzpicture}[remember picture, overlay]
+\node[inner sep=0pt,xshift=0cm] at (current page.center){
+\tikz \draw[step=2mm,black!50] (0,0) grid (126mm,94mm);
+};
+{
+\node[coordinate] at (1cm,-3.55cm) (start) {};
+\node[coordinate] at (1cm,3cm) (end) {};
+\node[coordinate] at (10cm,-3.55cm) (endy) {};
+\draw[->,thick] (start)--(end);
+\draw[->,thick] (start)--(endy);
+};
+\end{tikzpicture}
+
+\frametitle{Zeitliche Beziehung: Plasma Konzentration $\Leftrightarrow$ Wirkung}
+\note<1>{
+\begin{itemize}
+\item
+Bolus Gabe
+\item
+Darstellen, dass Konzentration zu Beginn hoch, Wirkung tief.
+\item
+Dieselbe Wirkung bei verschiedenen Konzentrationen
+\item
+Keine eindeutige Beziehung zw. Konzentration und Wirkung.
+\item
+Infusion: Verlauf er Konzentration\\
+Um so weniger zwischen Infusionsrate und Wirkung
+\end{itemize}
+}
+\infina
+\end{frame}
+
+\mode<article>{
+\begin{center}
+\includeslide[width=0.8\textwidth]{ZeitBez}
+\end{center}
+}
+
+
+\begin{frame}
+\frametitle{Konzentration am Wirkort}
+\begin{itemize}[<+->]
+\item
+Die Blutkonzentration hat keine direkte Beziehung zur wirkung
+\item
+Das Medikamente am Wirkort (Wirkortkonzentration) ist verantwortlich f�r Wirkung
+\item
+Im \enquote{Steady State} sind Konzentration im Blut und Wirkort Konzentration gleich.
+\item
+Die Wirkortkonzentration steigt und f\"allt entsprechend dem Konzentrationsgradienten. ($=$ Unterschied der Konzentrationen)
+\end{itemize}
+\note<1>{
+\begin{itemize}
+\item
+Mit Cylinder das Effect Kompartiment zeigen.
+\item
+Simulation mit einem Bolus
+\item
+Simulation mit konstanter Infusion
+\item
+Simulation die zeigt, dass mit Bolus die Plasmakonzentration \enquote{\"uberschossen} werden muss.
+\end{itemize}
+}
+\infina
+\end{frame}
+
+
+\mode<article>{Bei der Beschreibung der Pharmakokinetik wurde auf die
+Konzentration des Medikamentes im Blut resp. Plasma Bezug genommen. Die
+An�sthetika entfalten ihre Wirkung aber nicht im direkt im Blut in einem
+anderen Kompartiment z.B. im Gehirn. Es braucht aber Zeit bis das
+Medikament vom Blut in dieses Kompartiment aufgenommen ist. Es gibt also
+ein weiteres Kompartiment, den Wirkort, das wir in unsere �berlegungen
+einbeziehen m�ssen.}
+
+
+\frame{
+\frametitle{Input, Konzentration, Wirkung}
+\mode<presentation>{
+\begin{center}
+    \includegraphics<1>[clip=true,width=0.9\textwidth]{./receptor/receptorOn1.png}
+    \includegraphics<2>[clip=true,width=0.9\textwidth]{./receptor/receptorOn2.png}
+    \includegraphics<3>[clip=true,width=0.9\textwidth]{./receptor/receptorOn3.png}
+    \includegraphics<4>[clip=true,width=0.9\textwidth]{./receptor/receptorOn4.png}
+    \includegraphics<5>[clip=true,width=0.9\textwidth]{./receptor/receptorOn5a.png}
+    \includegraphics<6>[clip=true,width=0.9\textwidth]{./receptor/receptorOn5.png}
+\end{center}
+}
+
+\mode<article>{
+\centering
+\begin{figure}[H]
+    \includegraphics<1>[clip=true,width=0.3\textwidth]{./receptor/receptorOn3.png}
+\caption{Es braucht Zeit bis sich die Wirkung, die mit einer bestimmten
+Plasmakonzentration korreliert sich etabliert hat. Initial hohe Konzentration im Blut, das
+Medikament hat den Rezeptor noch nicht erreicht}
+\end{figure}
+}
+\note<1>{.}
+}
+
+
+\frame{
+\frametitle{Wirkverlust $\Leftarrow$ Konzentration}
+\mode<presentation>{
+\begin{center}
+    \includegraphics<1>[clip=true,width=0.9\textwidth]{./receptor/receptorOff1.png}
+    \includegraphics<2>[clip=true,width=0.9\textwidth]{./receptor/receptorOff2.png}
+    \includegraphics<3>[clip=true,width=0.9\textwidth]{./receptor/receptorOff3.png}
+    \includegraphics<4>[clip=true,width=0.9\textwidth]{./receptor/receptorOff4.png}
+    \includegraphics<5>[clip=true,width=0.9\textwidth]{./receptor/receptorOff5.png}
+    \includegraphics<6>[clip=true,width=0.9\textwidth]{./receptor/receptorOff6.png}
+    \includegraphics<7>[clip=true,width=0.9\textwidth]{./receptor/receptorOff7.png}
+\end{center}
+}
+\mode<article>{
+\centering
+\begin{figure}[H]
+    \includegraphics<1>[clip=true,width=0.3\textwidth]{./receptor/receptorOff3.png}
+\caption{Die Konzentration im BLut sinkt. Dadurch entsteht ein umgekehrter Konzentrationsgradient.}
+\end{figure}
+}
+\note<1>{.}
+}
+
+
+
+
+
+
+
+
+\subsection{$t_{peak}$}
+
+
+\begin{frame}<presentation>[label=PeakNachBolus]
+\begin{tikzpicture}[remember picture, overlay]
+\node[inner sep=0pt,xshift=0cm] at (current page.center){
+\tikz \draw[step=2mm,black!50] (0,0) grid (126mm,94mm);
+};
+{
+\node[coordinate] at (1cm,-3.55cm) (start) {};
+\node[coordinate] at (1cm,3cm) (end) {};
+\node[coordinate] at (10cm,-3.55cm) (endy) {};
+\draw[->,thick] (start)--(end);
+\draw[->,thick] (start)--(endy);
+};
+\end{tikzpicture}
+
+\frametitle{Maximale Konzentration nach Bolus \enquote{Peak} Konzentration}
+\note<1>{
+\begin{itemize}
+\item
+Kurve f\"ur Bolus  - $C_{e}$
+\item
+Zeigen der $t_{peak}$; Wenn Bolus verdoppelt wie lange geht es bis maximale Konzentration erreicht?
+\item
+Zeigen, dass mit doppeltem Bolus, gleiche Kurve aber doppelt so hoch
+\item
+Ist der Wirkeintritt bei Verdoppelung der Konzentration schneller? (Esmeron)
+\item
+Zeigen, dass Wirkeintritt, definiert als Zeit bis zu einer Konzentration schneller.
+\item
+Noch einmal mit Cylinders zeigen
+\item
+FentanaBolus.xls
+\end{itemize}
+}
+\infina
+\end{frame}
+
+\mode<article>{
+\begin{center}
+    \includeslide[width=0.8\textwidth]{PeakNachBolus}
+\end{center}
+}
+
+Nach dem Verabreichen eines Bolus eines An�sthetikums f�llt die initial hohe Konzentration im Blut ab und die Konzentration am Wirkort steigt auf Grund des Konzentrationsgradienten an. Wenn die Konzentration am Wirkort und die Konzentration im Blut gleich sind, ist die Konzentration am Wirkort maximal. Die Zeit bis diese maximale Konzentration erreicht wird ist unabh�ngig von der Gr�sse des Bolus gleich!
+
+
+Warum verabreichen wir eine h�here Dosis des Nicht-Depolarisierenden Muskelrelaxans bei einer Notfalleinleitung?
+
+\frame<presentation>[label=ZeitWirkung]{
+\begin{tikzpicture}[remember picture, overlay]
+\node[inner sep=0pt,xshift=0cm] at (current page.center){
+\tikz \draw[step=2mm,black!50] (0,0) grid (126mm,94mm);
+};
+{
+\node[coordinate] at (1cm,-3.55cm) (start) {};
+\node[coordinate] at (1cm,3cm) (end) {};
+\node[coordinate] at (10cm,-3.55cm) (endy) {};
+\draw[->,thick] (start)--(end);
+\draw[->,thick] (start)--(endy);
+};
+\end{tikzpicture}
+
+\frametitle{Zeit $\Leftrightarrow$ Wirkung: Erh\"ohung der Dosis}
+\note<1>{
+\begin{itemize}
+\item
+Submaximale Konzentration mit geringen Bolus
+\item
+Zweite submaximale Dosis
+\item
+Dritte supramaximale Dosis
+\item
+Vierte supramaximale Dosis: Maximale Wirkung gleich: $t_{peak}$ nicht erkennbar.
+\item
+Zusammenfassen: Mit derselben Infusionsrate k\"onnen die Konzentrationen verschieden sein. F\"ur die $C_{e}$  gilt dies sogar noch mehr. (RiseToSS.xls zeigt den Verlauf bei konstanter Infusion.)
+\end{itemize}
+}
+\infina
+}
+
+\mode<article>{
+\begin{center}
+\includeslide[width=0.8\textwidth]{ZeitWirkung}
+\end{center}
+}
+
+
+\mode<article>{
+\vspace{0.5cm}
+\begin{minipage}{\textwidth}
+}
+
+\begin{frame}
+\frametitle{T peak, Pentothal}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{../Figures/FlaishonPentoBIS1997.jpg}
+\end{center}
+\note<1>{.}
+\end{frame}
+
+\mode<article>{
+\end{minipage}
+}
+
+\mode<article>{
+\begin{minipage}{\textwidth}
+}
+
+\begin{frame}
+\frametitle{T peak, Propofol}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{../Figures/FlaishonPropofolBIS1997.jpg}
+\end{center}
+\note<1>{.}
+\end{frame}
+
+\mode<article>{
+
+Obwohl Propofol eine \enquote{schnellere} Kinetik hat, dauert es nach einer �quipotenten potenten Dosis l�nger bis ein Patient aufwacht als nach Thiopental
+\vspace{.5cm}
+\end{minipage}
+}
+
+\mode<article>{
+\begin{minipage}{\textwidth}
+}
+
+\begin{frame}
+\frametitle{T peak, Etomidate versus Propofol}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{../Figures/EtomidatePropofolTPeak.jpg}
+\end{center}
+\note<1>{.}
+\end{frame}
+
+\mode<article>{
+Mit Etomidate wird der maximale Effekt nach einer Bolus Dosis schneller erreicht als nach Gabe von Propofol.
+
+\end{minipage}
+}

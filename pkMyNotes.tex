@@ -1,0 +1,45 @@
+%
+\documentclass[12pt,xcolor=dvipsname,ignorenonframetext,handout%
+]{beamer}
+\setbeameroption{show only notes}
+
+\author{Thomas Schnider}
+\date{\today}
+
+\usepackage[ngerman]{babel}
+\usepackage[ansinew]{inputenc}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{pdfpages}
+
+\setbeamercovered{highly dynamic}
+
+\newcommand{\HWZ}{$t_{\frac{1}{2}}$}
+\usepackage{sbox}
+  %
+\usepackage{currfile}
+  \newcommand{\infina}{% inSertfiLEnaME
+    \begin{textblock}{0}(0.4,15)
+    {\color{black!20}\Tiny{\currfilename}}
+  \end{textblock}}
+%%
+
+\title{Pharmakokinetik, Pharmakodynamik}
+\subtitle{}
+\author{}
+
+\institute[Kantonsspital St.Gallen] {
+  \inst{}
+ }
+\date[02.2014]{St.Gallen, Februar 2014}
+
+\setbeamertemplate{navigation symbols}{}
+
+
+\begin{document}
+\mode<all>
+\input{slides.tex}
+\mode<all>
+\input{slides2.tex}
+
+
+\end{document} 
