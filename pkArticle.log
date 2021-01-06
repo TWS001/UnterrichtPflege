@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.19)  6 JAN 2021 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.19)  6 JAN 2021 16:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -896,14 +896,14 @@ Overfull \hbox (35.17386pt too wide) in paragraph at lines 46--46
  []
 
 
-Overfull \hbox (35.17386pt too wide) in paragraph at lines 79--79
+Overfull \hbox (35.17386pt too wide) in paragraph at lines 77--77
 []\OT1/cmr/m/n/5 ein.tex[] 
  []
 
 <../figures/dose_domains.jpg, id=95, 303.0522pt x 214.401pt>
 File: ../figures/dose_domains.jpg Graphic file (type jpg)
 <use ../figures/dose_domains.jpg>
-Package pdftex.def Info: ../figures/dose_domains.jpg  used on input line 98.
+Package pdftex.def Info: ../figures/dose_domains.jpg  used on input line 96.
 (pdftex.def)             Requested size: 272.1676pt x 192.56325pt.
 [1
 
@@ -1397,7 +1397,7 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/
 local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on pkArticle.pdf (26 pages, 1018400 bytes).
+Output written on pkArticle.pdf (26 pages, 1018136 bytes).
 PDF statistics:
  546 PDF objects out of 1000 (max. 8388607)
  468 compressed objects within 5 object streams
