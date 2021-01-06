@@ -1,0 +1,23 @@
+\babel@toc {ngerman}{}
+\beamer@sectionintoc {1}{Einleitung}{1}{0}{1}
+\beamer@sectionintoc {2}{Grundlagen}{12}{0}{2}
+\beamer@sectionintoc {3}{Therapieziel Wirkung}{16}{0}{3}
+\beamer@sectionintoc {4}{Input Beziehung zur Konzentration}{20}{0}{4}
+\beamer@sectionintoc {5}{Elimination, Umverteilung}{23}{0}{5}
+\beamer@sectionintoc {6}{Input und Elimination}{30}{0}{6}
+\beamer@sectionintoc {7}{Elimination, Halbwertszeit}{36}{0}{7}
+\beamer@subsectionintoc {7}{1}{Elimination, Context sensitive Halbwertszeit}{36}{0}{7}
+\beamer@sectionintoc {8}{Pharmakodynamik}{46}{0}{8}
+\beamer@subsectionintoc {8}{1}{PD und Elimination}{48}{0}{8}
+\beamer@subsectionintoc {8}{2}{Elimination, Relevanter Konzentrationsabfall}{48}{0}{8}
+\beamer@sectionintoc {9}{Wirkortkonzentration}{49}{0}{9}
+\beamer@subsectionintoc {9}{1}{$t_{peak}$}{67}{0}{9}
+\beamer@sectionintoc {10}{Pharmakokinetische Modelle}{72}{0}{10}
+\beamer@sectionintoc {11}{Verwendung der Modelle: TCI}{78}{0}{11}
+\beamer@sectionintoc {13}{An\"asthetika (im engeren Sinne)}{87}{0}{12}
+\beamer@subsectionintoc {13}{1}{i.v. Hypnotika}{87}{0}{12}
+\beamer@subsectionintoc {13}{2}{i.v. Opiate}{129}{0}{12}
+\beamer@sectionintoc {14}{Praxis der TIVA}{153}{0}{13}
+\beamer@subsectionintoc {14}{1}{i.v. An\"asthesie mit TCI}{153}{0}{13}
+\beamer@subsectionintoc {14}{2}{i.v. Applikation: TIVA / TCI}{158}{0}{13}
+\beamer@sectionintoc {15}{Repetition}{174}{0}{14}
